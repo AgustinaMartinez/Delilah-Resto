@@ -10,20 +10,15 @@
   "author": "Agustina Martinez",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
     "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^4.1.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.5"
   }
 }

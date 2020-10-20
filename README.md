@@ -252,6 +252,61 @@ access-token: my_token
 }
 
 
+## Create a product
+
+If you want to create an product, it must be in this format:
+
+{
+    "description": "product_name",
+    "unitPrice": product_price,
+    "imgURL": "image_url"
+}
+
+#### If you try to add a new product without specifying a token, you will receive this response:
+
+{
+  "message": "No token provided."
+}
+
+
+## Edit a product
+
+If you want to edit a product, you can write just the filter you want to update. For example:
+
+{
+    "unitPrice": new_product_price
+}
+
+#### If you want to edit a product without specify any token, you will receive this response:
+
+{
+  "message": "Unauthorized."
+}
+
+
+## Delete a product
+
+If you want to delete a product, you can write just the filter you want to update. For example:
+
+{
+    "description": "product_name",
+    "unitPrice": product_price,
+    "imgURL": "image_url"
+}
+
+#### If you want to delete a product without specify any token, you will receive this response:
+
+{
+  "message": "Unauthorized."
+}
+
+#### If you want to delete a product specifying admin token, you will receive this response:
+
+{
+  "message": "The product was deleted successfully."
+}
+
+
 ## Create an order
 
 If you want to create an order, it must be in this format:
@@ -262,6 +317,20 @@ If you want to create an order, it must be in this format:
 	"status": "id_del_status"
 }
 
+
+## Edit an order
+
+If you want to edit a order, you can write just the filter you want to update. For example:
+
+{
+	"status": "new_status"
+}
+
+#### If you want to edit a order without specify any token, you will receive this response:
+
+{
+  "message": "Unauthorized."
+}
 
 #### If you want to do any Admin operation with "user" role, you will receive this response:
 

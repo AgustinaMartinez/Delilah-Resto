@@ -1,4 +1,5 @@
 import Role from '../models/roles.model';
+import "regenerator-runtime/runtime.js";
 
 export const createRoles = async () => {
     try{

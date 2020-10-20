@@ -4,7 +4,9 @@
   "description": "API REST with NodeJs, Express and MongoDB",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node"
+    "build": "babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js"
   },
   "keywords": [],
   "author": "Agustina Martinez",
@@ -19,6 +21,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "regenerator-runtime": "^0.13.7"
   }
 }

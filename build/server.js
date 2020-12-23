@@ -25,6 +25,8 @@ var _order = _interopRequireDefault(require("./routes/order.route"));
 
 var _status = _interopRequireDefault(require("./routes/status.route"));
 
+var _config = require("./config/config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -38,9 +40,10 @@ var app = (0, _express["default"])();
 app.use((0, _morgan["default"])('dev')); // It shows in console the requests made from Insomnia
 
 app.use((0, _express.json)()); // It understands json files
-//Settings
 
-app.set('port', 3000); //Routes
+console.log(_config.envVariables); //Settings
+
+app.set('port', _config.envVariables.port); //Routes
 
 app.use('/neighborhoods', _neighborhood["default"]);
 /*http://localhost:3000/neighborhoods*/

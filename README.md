@@ -5,9 +5,11 @@ API Rest built with Node.js, Express.js, MongoDB and Mongoose. This is built in 
 
 1.  Clone the repo and run the command "npm install" so you can install all the dependecies and devDependencies.
 
-2.  Download MongoDB Compass in this link https://www.mongodb.com/try/download/compass and connect with the database using this URL: mongodb+srv://acamica:acamica@node-api-rest.fdfqz.mongodb.net/delilahresto?retryWrites=true&w=majority
+<!-- 2.  Download MongoDB Compass in this link https://www.mongodb.com/try/download/compass and connect with the database using this URL: mongodb+srv://acamica:acamica@node-api-rest.fdfqz.mongodb.net/delilahresto?retryWrites=true&w=majority -->
 
-3. You are going to see 7 collections: neighborhoods, orders, payment, products, roles, status and users. Each collection is formed with these documents:
+2. Run "npm start".
+
+3. The database structure is made with MongoDB with these 7 collections: neighborhoods, orders, payment, products, roles, status and users. Each collection is formed with these documents:
 
 
 ## Neighborhoods

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import {envVariables} from '../config/config';
 
-mongoose.connect("mongodb+srv://acamica:acamica@node-api-rest.fdfqz.mongodb.net/delilahresto?retryWrites=true&w=majority",
+mongoose.connect(`${envVariables.host}+srv://${envVariables.user}:${envVariables.pass}@node-api-rest.fdfqz.mongodb.net/${envVariables.name}?retryWrites=${envVariables.retryWrites}&w=${envVariables.user}`,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

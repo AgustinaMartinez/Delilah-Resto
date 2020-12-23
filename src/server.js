@@ -7,6 +7,7 @@ import userRoutes from './routes/user.route';
 import productRoutes from './routes/product.route';
 import orderRoutes from './routes/order.route';
 import statusRoutes from './routes/status.route';
+import {envVariables} from './config/config';
 
 // Inizialization
 const app = express();
@@ -15,9 +16,9 @@ createRoles();
 // Middlewares
 app.use(morgan('dev')); // It shows in console the requests made from Insomnia
 app.use(json()); // It understands json files
-
+console.log(envVariables)
 //Settings
-app.set('port', 3000);
+app.set('port', envVariables.port);
 
 //Routes
 app.use('/neighborhoods', neighborhoodRoutes); /*http://localhost:3000/neighborhoods*/
